@@ -26,6 +26,7 @@ requirements:
 test:
   imports:
     - pyStarDB
+    - pyStarDB.sp_pystardb
   commands:
     - pip list
     - pip check
@@ -33,7 +34,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/MPI-Dortmund/pyStarDB.git
+  home: https://github.com/MPI-Dortmund/pyStarDB
   summary: Star file python Package
   license: MIT
   license_file: LICENSE

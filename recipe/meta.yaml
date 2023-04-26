@@ -1,5 +1,5 @@
 {% set name = "pystardb" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyStarDB-{{ version }}.tar.gz
-  sha256: 47a0d2de0decfc9434eae32db7e7014851913b6f0c8fdcd58b4a7f26eb49c4e9
+  sha256: 95d28bc71b87f81875c4876498e4761543166e85f33b5047313829eb717ddf65
 
 build:
   noarch: python
@@ -26,6 +26,7 @@ requirements:
 test:
   imports:
     - pyStarDB
+    - pyStarDB.sp_pystardb
   commands:
     - pip list
     - pip check
@@ -33,7 +34,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/MPI-Dortmund/pyStarDB.git
+  home: https://github.com/MPI-Dortmund/pyStarDB
   summary: Star file python Package
   license: MIT
   license_file: LICENSE

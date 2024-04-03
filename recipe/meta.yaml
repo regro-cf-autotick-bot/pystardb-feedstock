@@ -1,5 +1,5 @@
 {% set name = "pystardb" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyStarDB-{{ version }}.tar.gz
-  sha256: 95d28bc71b87f81875c4876498e4761543166e85f33b5047313829eb717ddf65
+  sha256: 75a9b52fe59451767492c86622d4ccd19d0d5707083fcc748c28465021ddcea7
 
 build:
   noarch: python
